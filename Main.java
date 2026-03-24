@@ -9,7 +9,7 @@ public class Main {
             System.out.println("Enter Age: ");
             int age = sc.nextInt();
             if (age < 0 || age > 100) {
-                throw new InvalidAge("Invalid age: Age cannot be negative");
+                throw new InvalidAge("Invalid age: Age cannot be negative or above 100");
             }
         } catch (InvalidAge e) {
             System.out.println(e.getMessage());
